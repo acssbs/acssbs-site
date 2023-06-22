@@ -1,0 +1,185 @@
+/* Footer */
+.Footer {
+    /* Auto layout */
+
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : flex-start;
+    padding        : 32px;
+
+    /*width : 1920px;
+    height: 264px;*/
+
+    /* Footer */
+
+    background: var(--footer-color);
+
+    /* Inside auto layout */
+
+    flex      : none;
+    order     : 2;
+    align-self: stretch;
+    flex-grow : 0;
+}
+
+/* Container */
+.Container {
+    /* Auto layout */
+
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : flex-start;
+    padding        : 0px;
+    gap            : 128px;
+
+    /*
+    width    : 1280px;
+    height: 200px;
+    */
+
+    /* Inside auto layout */
+
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+}
+
+/* Contato */
+.Contato {
+    /* Auto layout */
+
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+    padding       : 8px 16px;
+    gap           : 8px;
+
+    /* Inside auto layout */
+
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+}
+
+/* Contato e Endereço: */
+.ContactTitle {
+
+    font-family: var(--font-nunito);
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    /* Footer Font */
+
+    color: var(--footer-font-color);
+
+    /* Inside auto layout */
+
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+}
+
+/* Email */
+.TextContainer {
+    /* Auto layout */
+
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    padding       : 0px;
+    gap           : 8px;
+
+
+    /* Inside auto layout */
+
+    flex     : none;
+    order    : 1;
+    flex-grow: 0;
+}
+
+.ContactIcon {
+    width : 14px;
+    height: 14px;
+
+    font-family: var(--material-icons);
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 14px;
+    /* identical to box height */
+
+    /* Footer Font */
+
+    color: var(--footer-font-color);
+
+    /* Inside auto layout */
+
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+}
+
+.MediaIcon {
+    /* Vector */
+    width : 12px;
+    height: 12px;
+
+    /* Footer Font */
+
+    /* background: var(--footer-font-color); */
+
+    /* Inside auto layout */
+
+    flex     : none;
+    order    : 0;
+    flex-grow: 0;
+}
+
+/* acssbs.site@gmail.com */
+.ContactText {
+
+    /* width : 146px; */
+    height: 19px;
+
+    font-family: var(--font-nunito);
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* Footer Font */
+
+    color: var(--footer-font-color);
+
+    /* Inside auto layout */
+
+    flex     : none;
+    order    : 1;
+    flex-grow: 0;
+}
+
+/* MediaContainer */
+.MediaContainer {
+    /* Auto layout */
+
+    display       : flex;
+    flex-direction: row;
+    align-items   : flex-start;
+    padding       : 0px;
+    gap           : 128px;
+
+
+
+    /* Inside auto layout */
+
+    flex     : none;
+    order    : 1;
+    flex-grow: 0;
+}
