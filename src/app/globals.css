@@ -1,7 +1,7 @@
 :root {
     --font-color              : #000000;
     --background-color        : #F3F3F3;
-    --navbar-color            : #3F77D4;
+    --navbar-color            : #386BBE;
     --navbar-font-color       : #FFFFFF;
     --footer-color            : #273238;
     --footer-font-color       : #FFFFFF;
@@ -44,11 +44,11 @@ body {
 }
 
 .Content {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
-    padding: 64px 0px;
-    gap: 32px;
+    align-items   : center;
+    padding       : 64px 0px;
+    gap           : 32px;
 
     /* Fundo */
 
@@ -56,8 +56,8 @@ body {
 
     /* Inside auto layout */
 
-    flex: none;
-    order: 1;
+    flex      : none;
+    order     : 1;
     align-self: stretch;
-    flex-grow: 0;
+    flex-grow : 0;
 }
