@@ -1,4 +1,5 @@
 import { Navbar } from '@/components/Navbar'
+import { MainContent } from '@/components/MainContent'
 import { Footer } from '@/components/Footer'
 
 import './globals.css'
@@ -25,9 +26,7 @@ export default function RootLayout({ children }) {
         <html lang="pt-BR">
             <body className={`${nunito.className} ${materialSymbols.variable}`}>
                 <Navbar />
-                <main className="Content">
-                    {children}
-                </main>
+                <MainContent>{children}</MainContent>
                 <Footer />
             </body>
         </html>
