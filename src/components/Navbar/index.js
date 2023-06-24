@@ -10,6 +10,9 @@ export function Navbar() {
                 <Image className={styles.Logo} src="/Logo.svg" width={40} height={40} alt="Logo do Site" />
                 <p className={styles.TextLogo}>ACSSBS</p>
             </div>
+            <div className={styles.HamburgerContainer}>
+                <span className={styles.HamburgerIcon}>menu</span>
+            </div>
             <div className={styles.LinkContainer}>
                 <Link className={styles.LinkAtivo} href="/">Página Inicial</Link>
                 <Link className={styles.Link} href="/news">Notícias</Link>

@@ -1,116 +1,62 @@
 /* Navbar */
 .Navbar {
-    /* Auto layout */
     display        : flex;
-    flex-direction : row;
     justify-content: space-between;
     align-items    : center;
     padding        : 8px;
     gap            : 10px;
 
-    /* width : 1920px; */
     height: 56px;
 
-    /* Navbar */
-
     background: var(--navbar-color);
-
-    /* Inside auto layout */
-
-    flex      : none;
-    order     : 0;
-    align-self: stretch;
-    flex-grow : 0;
 }
 
 /* LogoContainer */
 .LogoContainer {
-    /* Auto layout */
-
-    display       : flex;
-    flex-direction: row;
-    align-items   : center;
-    padding       : 0px 8px;
-    gap           : 8px;
-
-    width : 151px;
-    height: 40px;
-
-
-    /* Inside auto layout */
-
-    flex     : none;
-    order    : 0;
-    flex-grow: 0;
+    display    : flex;
+    align-items: center;
+    padding    : 0px 8px;
+    gap        : 8px;
+    width      : 151px;
+    height     : 40px;
 }
 
 /* TextLogo */
 .TextLogo {
-
     width : 87px;
     height: 30px;
 
     font-family: var(--font-nunito);
-    font-style : normal;
     font-weight: 600;
     font-size  : 22px;
     line-height: 30px;
-    /* identical to box height */
 
     display    : flex;
     align-items: center;
 
     /* Navbar Font */
     color: var(--navbar-font-color);
-
-    /* Inside auto layout */
-    flex     : none;
-    order    : 1;
-    flex-grow: 0;
 }
 
 /* Logo */
 .Logo {
     width : 40px;
     height: 40px;
-
-    /* background: var(--navbar-font-color);*/
-
-    /* Inside auto layout */
-
-    flex     : none;
-    order    : 0;
-    flex-grow: 0;
 }
 
 /* LinkContainer */
 .LinkContainer {
-    /* Auto layout */
-
     display        : flex;
     flex-direction : row;
     justify-content: center;
     align-items    : center;
     padding        : 8px;
     gap            : 16px;
-
-    width : 624px;
-    height: 43px;
-
-
-    /* Inside auto layout */
-
-    flex     : none;
-    order    : 1;
-    flex-grow: 0;
 }
 
 
 /* Página Inicial */
 .LinkAtivo {
-    width : 124px;
-    height: 27px;
-
     font-family         : var(--font-nunito);
     font-style          : normal;
     font-weight         : 700;
@@ -120,39 +66,42 @@
     align-items         : center;
     text-decoration-line: underline;
 
-    /* Navbar Font */
-
     color: var(--navbar-font-color);
-
-    /* Inside auto layout */
-
-    flex     : none;
-    order    : 0;
-    flex-grow: 0;
 }
 
-/* Sobre */
 .Link {
-    /* Sobre 
-    width : 53px;
-    height: 27px;*/
-
-    font-family: var(--font-nunito);
-    font-style : normal;
-    font-weight: 400;
-    font-size  : 20px;
-    line-height: 27px;
-    display    : flex;
-    align-items: center;
+    font-family         : var(--font-nunito);
+    font-weight         : 400;
+    font-size           : 20px;
+    line-height         : 27px;
+    display             : flex;
+    align-items         : center;
     text-decoration-line: none;
 
-    /* Navbar Font */
-
     color: var(--navbar-font-color);
+}
 
-    /* Inside auto layout */
+.HamburgerContainer {
+    display    : none;
+    align-items: center;
+    padding    : 8px;
+}
 
-    flex     : none;
-    order    : 3;
-    flex-grow: 0;
+.HamburgerIcon {
+    font-family: var(--material-icons);
+    font-size  : 27px;
+}
+
+@media (max-width: 820px) {
+    .Navbar {
+        height: auto;
+    }
+
+    .LinkContainer {
+        display: none;
+    }
+
+    .HamburgerContainer {
+        display: flex;
+    }
 }
