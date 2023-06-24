@@ -1,3 +1,4 @@
+/* Variáveis do Tema Claro. */
 :root {
     --font-color              : #000000;
     --background-color        : #F3F3F3;
@@ -14,18 +15,7 @@
     */
 }
 
-@media (prefers-color-scheme: dark) {
-    /*:root {
-        --font-color              : #FFFFFF;
-        --background-color        : #222222;
-        --navbar-color            : #172B4D;
-        --navbar-font-color       : #FFFFFF;
-        --footer-color            : #0C0C0C;
-        --footer-font-color       : #FFFFFF;
-        --section-background-color: #333333;
-    }*/
-}
-
+/* Garante que o Tamanho de Todos os Elementos HTML seja Consistente.*/
 * {
     box-sizing: border-box;
     padding   : 0;
@@ -37,27 +27,21 @@ body {
     background: var(--background-color);
 }
 
+/* Variáveis do Tema Escuro. */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-color              : #FFFFFF;
+        --background-color        : #222222;
+        --navbar-color            : #172B4D;
+        --navbar-font-color       : #FFFFFF;
+        --footer-color            : #0C0C0C;
+        --footer-font-color       : #FFFFFF;
+        --section-background-color: #333333;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
     }
-}
-
-.Content {
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
-    padding       : 64px 0px;
-    gap           : 32px;
-
-    /* Fundo */
-
-    background: #F3F3F3;
-
-    /* Inside auto layout */
-
-    flex      : none;
-    order     : 1;
-    align-self: stretch;
-    flex-grow : 0;
 }
