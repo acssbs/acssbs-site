@@ -1,17 +1,13 @@
-/* Navbar */
 .Navbar {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
     padding        : 8px;
     gap            : 10px;
-
-    height: 56px;
-
-    background: var(--navbar-color);
+    height         : 56px;
+    background     : var(--navbar-color);
 }
 
-/* LogoContainer */
 .LogoContainer {
     display    : flex;
     align-items: center;
@@ -21,30 +17,23 @@
     height     : 40px;
 }
 
-/* TextLogo */
 .TextLogo {
-    width : 87px;
-    height: 30px;
-
+    width      : 87px;
+    height     : 30px;
     font-family: var(--font-nunito);
     font-weight: 600;
     font-size  : 22px;
     line-height: 30px;
-
     display    : flex;
     align-items: center;
-
-    /* Navbar Font */
-    color: var(--navbar-font-color);
+    color      : var(--navbar-font-color);
 }
 
-/* Logo */
 .Logo {
     width : 40px;
     height: 40px;
 }
 
-/* LinkContainer */
 .LinkContainer {
     display        : flex;
     flex-direction : row;
@@ -54,8 +43,6 @@
     gap            : 16px;
 }
 
-
-/* Página Inicial */
 .LinkAtivo {
     font-family         : var(--font-nunito);
     font-style          : normal;
@@ -65,8 +52,7 @@
     display             : flex;
     align-items         : center;
     text-decoration-line: underline;
-
-    color: var(--navbar-font-color);
+    color               : var(--navbar-font-color);
 }
 
 .Link {
@@ -77,31 +63,42 @@
     display             : flex;
     align-items         : center;
     text-decoration-line: none;
-
-    color: var(--navbar-font-color);
+    color               : var(--navbar-font-color);
 }
 
-.HamburgerContainer {
-    display    : none;
-    align-items: center;
-    padding    : 8px;
+.HamburgerButton {
+    display         : none;
+    align-items     : center;
+    justify-content : center;
+    width           : 40px;
+    height          : 40px;
+    background-color: var(--navbar-color);
+    border          : none;
+    border-radius   : 2px;
 }
 
 .HamburgerIcon {
     font-family: var(--material-icons);
-    font-size  : 27px;
+    font-size  : 28px;
 }
 
 @media (max-width: 820px) {
     .Navbar {
-        height: auto;
+        height        : auto;
+        flex-direction: column;
+    }
+
+    .Responsive {
+        display        : flex;
+        width          : 100%;
+        justify-content: space-between;
     }
 
     .LinkContainer {
-        display: none;
+        flex-direction: column;
     }
 
-    .HamburgerContainer {
+    .HamburgerButton {
         display: flex;
     }
 }
