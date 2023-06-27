@@ -1,4 +1,6 @@
-import styles from "./Introduction.module.css"
+// import styles from "./Introduction.module.css"
+
+import styles from '@/components/Introduction/Introduction.module.css'
 
 import Image from 'next/image'
 

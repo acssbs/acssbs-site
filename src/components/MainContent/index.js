@@ -1,4 +1,4 @@
-import styles from './MainContent.module.css'
+import styles from '@/components/MainContent/MainContent.module.css'
 
 export function MainContent({ children }) {
     return (
