@@ -1,0 +1,177 @@
+.Contact {
+    display        : flex;
+    justify-content: center;
+    align-items    : flex-start;
+    padding        : 32px;
+    gap            : 16px;
+    width          : 1280px;
+    background     : var(--section-background-color);
+    border-radius  : 16px;
+}
+
+.Container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    gap           : 32px;
+    align-self    : stretch;
+}
+
+.Title {
+    color      : var(--font-color);
+    text-align : center;
+    font-size  : 40px;
+    font-family: var(--font-nunito);
+    font-weight: 700;
+}
+
+.Text {
+    color      : var(--font-color);
+    text-align : justify;
+    font-size  : 20px;
+    font-family: var(--font-nunito);
+}
+
+.ListItem {
+    margin-bottom  : 8px;
+    display        : flex;
+    justify-content: left;
+}
+
+.ContactIcon {
+    font-family : var(--material-icons);
+    font-style  : normal;
+    font-weight : 400;
+    font-size   : 20px;
+    line-height : 20px;
+    color       : var(--footer-font-color);
+    margin-right: 8px;
+}
+
+.MediaIcon {
+    width       : 20px;
+    height      : 20px;
+    margin-right: 8px;
+}
+
+.TextItem {
+    display     : flex;
+    align-items : center;
+    color       : var(--font-color);
+    text-align  : justify;
+    font-size   : 20px;
+    font-family : var(--font-nunito);
+    margin-right: 8px;
+}
+
+.LinkItem {
+    color: var(--font-color);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .Contact {
+        flex-direction: column;
+        padding       : 16px;
+        gap           : 16px;
+        width         : 100%;
+    }
+
+    .Container {
+        gap: 16px;
+    }
+
+    .Title {
+        font-size: 30px;
+    }
+
+    .Text {
+        font-size: 18px;
+    }
+
+    .ContactIcon {
+        font-size  : 18px;
+        line-height: 18px;
+    }
+
+    .MediaIcon {
+        width : 18px;
+        height: 18px;
+    }
+
+    .TextItem {
+        font-size: 18px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1120px) {
+    .Contact {
+        flex-direction: column;
+        padding       : 16px;
+        gap           : 16px;
+        width         : 720px;
+    }
+
+    .Container {
+        gap: 16px;
+    }
+
+    .Title {
+        font-size: 34px;
+    }
+
+    .Text {
+        font-size: 18px;
+    }
+
+    .ContactIcon {
+        font-size  : 18px;
+        line-height: 18px;
+    }
+
+    .MediaIcon {
+        width : 18px;
+        height: 18px;
+    }
+
+    .TextItem {
+        font-size: 18px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1121px) and (max-width: 1440px) {
+    .Contact {
+        flex-direction: column;
+        padding       : 32px;
+        gap           : 16px;
+        width         : 1024px;
+    }
+
+    .Container {
+        gap: 16px;
+    }
+
+    .Title {
+        font-size: 34px;
+    }
+
+    .Text {
+        font-size: 18px;
+    }
+
+    .ContactIcon {
+        font-size  : 18px;
+        line-height: 18px;
+    }
+
+    .MediaIcon {
+        width : 18px;
+        height: 18px;
+    }
+
+    .TextItem {
+        font-size: 18px;
+    }
+}
