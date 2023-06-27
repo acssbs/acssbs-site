@@ -9,12 +9,13 @@
 }
 
 .LogoContainer {
-    display    : flex;
-    align-items: center;
-    padding    : 0px 8px;
-    gap        : 8px;
-    width      : 151px;
-    height     : 40px;
+    display        : flex;
+    align-items    : center;
+    padding        : 0px 8px;
+    gap            : 8px;
+    width          : 151px;
+    height         : 40px;
+    text-decoration: none;
 }
 
 .TextLogo {
