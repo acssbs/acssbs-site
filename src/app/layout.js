@@ -1,8 +1,10 @@
+import './globals.css'
+
 import { Navbar } from '@/components/Navbar'
+import { VLibras } from '@/components/VLibras'
 import { MainContent } from '@/components/MainContent'
 import { Footer } from '@/components/Footer'
 
-import './globals.css'
 import { Nunito } from 'next/font/google'
 import localFont from 'next/font/local'
 
@@ -13,7 +15,7 @@ const materialSymbols = localFont({
     style: 'normal',
     src: '../../public/fonts/Material_Icons.woff2', // This is a reference to woff2 file from NPM package "material-symbols"
     display: 'block',
-    weight: '100 700',
+    weight: '100 700'
 })
 
 export const metadata = {
@@ -26,6 +28,7 @@ export default function RootLayout({ children }) {
         <html lang="pt-BR">
             <body className={`${nunito.className} ${materialSymbols.variable}`}>
                 <Navbar />
+                <VLibras />
                 <MainContent>{children}</MainContent>
                 <Footer />
             </body>
